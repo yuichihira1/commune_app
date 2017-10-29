@@ -12,6 +12,10 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/*png
+/*vendor
+/*test
+/*coffee
 
 /node_modules
 /yarn-error.log

@@ -12,7 +12,6 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'haml-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
@@ -25,6 +24,11 @@ gem 'dotenv-rails'
 gem 'capistrano-rails', group: :development
 gem 'therubyracer'
 gem 'execjs'
+gem 'haml-rails'
+gem 'erb2haml'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'jquery-rails'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

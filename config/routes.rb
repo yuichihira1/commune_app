@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-
   devise_for :users, :controllers => {
                           :registrations => 'users/registrations',
-                          :sessions => 'users/sessions'
-                                      }
+                          :sessions => 'users'
+                        }
   root 'pages#index'
   resources :users, only: [:index, :show] do
-    resources :pages
+    resources :pages, only: [:new, :create, :show, :edit, :delete]
   end
 end

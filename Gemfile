@@ -19,7 +19,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'pry-rails'
 gem 'kaminari'
-gem 'carrierwave'
 gem 'dotenv-rails'
 gem 'capistrano-rails', group: :development
 gem 'therubyracer'
@@ -28,6 +27,7 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
+gem 'paperclip'
 
 
 group :development, :test do

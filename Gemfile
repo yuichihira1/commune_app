@@ -23,6 +23,8 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'dotenv-rails'
 gem 'capistrano-rails', group: :development
+gem 'therubyracer'
+gem 'execjs'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

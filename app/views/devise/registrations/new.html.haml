@@ -10,7 +10,7 @@
               = f.text_field :name, autofocus: true, type: "text", placeholder: "Username"
             .user-image.col-md-2
               %button.btn.btn-primary Add image
-              = f.text_field :avatar, type: "file"
+              = f.file_field :avatar, type: "file"
           = f.text_field :email, autofocus: true, type: "email", placeholder: "E-Mail"
           = f.text_field :password, autofocus: true, type: "password", placeholder: "Password"
         .col-md-12
@@ -27,5 +27,6 @@
           .user-user-profile.row
             .user-name.col-md-12
               %textarea{name: "textarea", cols: "30", rows: "4", placeholder: "Profile"}
+              = f.text_field :profile
       .row.text-center.user-btn
         %button.btn.btn-lg.btn-primary.btn-block{type: "submit"} Save
